@@ -326,8 +326,8 @@ Unique Paths	48.7%	Medium
 先建一个TrieNode的class，node里存一个node的array，links连接26个字母，一个boolean值是否是最后一个字母，有method Boolean containsKey（char ch），TrieNode get（char ch）, void put (char ch, TrieNode node), void setEnd(), boolean isEnd(); Trie class 里constructor trie，有一个root，method insert（string word），遍历每个char，把每个char放进trieNode，node = 下一个node，写一个searchPrefix method，返回一个前缀是word的trieNode，search method用searchprefix method，判断返回的node是否为空，node是否能做结尾，startwith同样用searchprefix method，不要判断能否做结尾了
 636	
 Exclusive Time of Functions	49.2%	Medium	
-78	
-Subsets	54.4%	Medium	
+78	Subsets	54.4%	Medium	
+回溯题，DFS递归，DFS里先把tmp list加进res，然后for循环从start 开始到最后一位，把start位的数字加进tmp，然后进递归，递归结束把这个数字remove掉，最后返回res。
 529	
 Minesweeper	54.0%	Medium	
 6	ZigZag Conversion	32.9%	Medium	
@@ -573,8 +573,8 @@ Best Time to Buy and Sell Stock III	34.5%	Hard
 Interleaving String	28.6%	Hard	
 688	
 Knight Probability in Chessboard	45.3%	Medium	
-221	
-Maximal Square	33.8%	Medium	
+221	Maximal Square	33.8%	Medium	
+二维DP；思想是当1的时候把他当作正方形的最右下这个点，然后看它的左上三个位置能组成的最大正方形；dp数组比原数组大一个，两个for二位遍历，当当前char是1的时候用转移方程，看他的左，上和左斜上三个dp的最小值再加一，维护一个dp里面的最大值，最后返回这个最大值的平方。
 907	
 Sum of Subarray Minimums	28.8%	Medium	
 1122	Relative Sort Array	66.6%	Easy	
