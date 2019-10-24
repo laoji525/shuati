@@ -919,8 +919,8 @@ Remove Duplicates from Sorted Array	41.6%	Easy
 把数字存进stack， 当当前数字小于前一个数，把前一个pop掉，最后用stack建string，edge case找不到小的数，1所有数字一样，2所有数字升序排列，只用把stack pop掉K个就行， 如果string头上有0，就把0都去掉
 397. Integer Replacement		Medium
 本质上目的是多做/2的操作,4的倍数是最好情况，能连做两次/2，N % 4 的四种情况，0是最优；1就-1；2直接/2，下一步未知；3就+1变成4；最后到3是特殊情况，3-2-1
-
-
+345. Reverse Vowels of a String
+写个method判断vowel，一个method用来swap，双指针左右遍历，都是vowel就swap，最后返回string
 
 Practice using the STAR Method on these common behavioral interviewing questions: 
 • Describe a situation in which you were able to use persuasion to successfully convince someone to see things your way.
