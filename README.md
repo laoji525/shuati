@@ -921,6 +921,8 @@ Remove Duplicates from Sorted Array	41.6%	Easy
 本质上目的是多做/2的操作,4的倍数是最好情况，能连做两次/2，N % 4 的四种情况，0是最优；1就-1；2直接/2，下一步未知；3就+1变成4；最后到3是特殊情况，3-2-1
 345. Reverse Vowels of a String
 写个method判断vowel，一个method用来swap，双指针左右遍历，都是vowel就swap，最后返回string
+1005. Maximize Sum Of Array After K Negations EASY
+先排序，遍历数组，K大于0且当前数是负数就取反，计算sum,遍历结束如果K大于0且是奇数就sum减两倍最小数
 
 Practice using the STAR Method on these common behavioral interviewing questions: 
 • Describe a situation in which you were able to use persuasion to successfully convince someone to see things your way.
