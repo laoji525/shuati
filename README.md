@@ -924,6 +924,8 @@ Remove Duplicates from Sorted Array	41.6%	Easy
 1005. Maximize Sum Of Array After K Negations EASY
 先排序，遍历数组，K大于0且当前数是负数就取反，计算sum,遍历结束如果K大于0且是奇数就sum减两倍最小数
 
+
+Amazon BQ
 Practice using the STAR Method on these common behavioral interviewing questions: 
 • Describe a situation in which you were able to use persuasion to successfully convince someone to see things your way.
 • Describe a time when you were faced with a stressful situation that demonstrated your coping skills. 
