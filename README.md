@@ -923,6 +923,9 @@ Remove Duplicates from Sorted Array	41.6%	Easy
 写个method判断vowel，一个method用来swap，双指针左右遍历，都是vowel就swap，最后返回string
 1005. Maximize Sum Of Array After K Negations EASY
 先排序，遍历数组，K大于0且当前数是负数就取反，计算sum,遍历结束如果K大于0且是奇数就sum减两倍最小数
+958. Check Completeness of a Binary Tree	Medium
+1.BFS遍历，声明一个boolean存是否走到最后一个节点，whilequeue循环遍历，如果curr节点是null就循环走完，flag变true，else当前节点不为空里面，flag为true直接返回false，queue加左右节点，最后返回true
+2.BFS遍历，前面都一样，while里先看左节点，不为空如果flag是true直接返回false，否则放进左节点，然后看右节点一样的操作，while结束返回true
 
 
 Amazon BQ
