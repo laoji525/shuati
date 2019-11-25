@@ -927,7 +927,9 @@ Remove Duplicates from Sorted Array	41.6%	Easy
 958. Check Completeness of a Binary Tree	Medium
 1.BFS遍历，声明一个boolean存是否走到最后一个节点，whilequeue循环遍历，如果curr节点是null就循环走完，flag变true，else当前节点不为空里面，flag为true直接返回false，queue加左右节点，最后返回true
 2.BFS遍历，前面都一样，while里先看左节点，不为空如果flag是true直接返回false，否则放进左节点，然后看右节点一样的操作，while结束返回true
-
+1133. Largest Unique Number
+1.遍历array,放进hashtable,value存频率,再遍历keyset,只看频率为一的最后返回最大值
+2.因为取值范围是0到1000,建一个大小是1001的hashtable就行,遍历array存频率,table从大到小遍历,如果table[i]为1直接return i
 
 Amazon BQ
 Practice using the STAR Method on these common behavioral interviewing questions: 
