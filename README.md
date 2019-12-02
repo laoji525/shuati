@@ -347,8 +347,8 @@ Longest Duplicate Substring	22.5%	Hard
 和31题一模一样
 133	
 Clone Graph	27.8%	Medium	
-240	
-Search a 2D Matrix II	41.2%	Medium	
+240	Search a 2D Matrix II	41.2%	Medium	
+从右上角开始二维数组遍历，如果当前是target返回true，如果当前小于target，row++，如果当前大于target，col--；最后返回false；
 854	K-Similar Strings	34.7%	Hard	
 其实本质上是排序，B是目标string，BFS遍历，用set记录visit是string，双指针，for循环同层遍历，做完for循环res+1，i是换的index，j是被换的index，i每次走到第一个unsorted的位置，j从i开始找到满足条件能交换的位置，把i和j交换然后进行判断，下一步遍历还是返回
 150	
