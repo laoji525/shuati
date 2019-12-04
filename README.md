@@ -930,6 +930,9 @@ Remove Duplicates from Sorted Array	41.6%	Easy
 1133. Largest Unique Number
 1.遍历array,放进hashtable,value存频率,再遍历keyset,只看频率为一的最后返回最大值
 2.因为取值范围是0到1000,建一个大小是1001的hashtable就行,遍历array存频率,table从大到小遍历,如果table[i]为1直接return i
+1167. Minimum Cost to Connect Sticks	Medium
+pq，拿出前两个相加，放回去，while到size是1，返回sum
+
 
 Amazon BQ
 Practice using the STAR Method on these common behavioral interviewing questions: 
