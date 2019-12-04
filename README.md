@@ -572,8 +572,8 @@ Boolean array做hashmap记录是不是prime，从2遍历到n，填hashmap，记�
 Best Time to Buy and Sell Stock III	34.5%	Hard	
 97	
 Interleaving String	28.6%	Hard	
-688	
-Knight Probability in Chessboard	45.3%	Medium	
+688	Knight Probability in Chessboard	45.3%	Medium	
+DP题，DP存每个点能走到的次数，先都用1填满，总共走K次，for循环K次，每次新建一个新的二维DP数组，然后二维遍历坐标，for循环8次8个方向，得到下一个位置的坐标，用if判断是否在棋盘上，是就到转移方程，tmp dp在当前点 += 前一个点的坐标上的次数。最后返回dp[r][c] / math.pow(8, k),因为dp[r][c]存的是从rc出发能到达棋盘内的次数。
 221	Maximal Square	33.8%	Medium	
 二维DP；思想是当1的时候把他当作正方形的最右下这个点，然后看它的左上三个位置能组成的最大正方形；dp数组比原数组大一个，两个for二位遍历，当当前char是1的时候用转移方程，看他的左，上和左斜上三个dp的最小值再加一，维护一个dp里面的最大值，最后返回这个最大值的平方。
 907	
