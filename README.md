@@ -36,7 +36,7 @@ Concatenated Words	36.2%	Hard
 127	Word Ladder	25.1%	Medium	
 写两个help method， 一个replace string里index上的char，另一个生成给的string能到的下一个word的所以的arraylist每个char都从a到z进行替换，如果在set里就放进arraylist，主method一个set存word，一个set存路径，一个queue做bfs，声明一个步数，用size的for循环，进行同一个word的遍历，用for循序在nextwords里遍历，如果能找到目标word就直接返回步数，如果路径里有word，就跳过，否则queue放进word，路径也放进word，最后返回零
 139	Word Break	36.2%	Medium	
-用dp，dp【0】是true，用一个set存words，双指针遍历，当前一个dp【j】是true同时往后的word在dict里，dp【i】就为true然后break小循环，最后返回最后一个dp
+用dp，dp[0]是true，用一个set存words，双指针遍历，当前一个dp[j]是true同时往后的word在dict里，dp[i]就为true然后break小循环，最后返回最后一个dp
 138	Copy List with Random Pointer	28.3%	Medium	
 Deep copy一个linkedlist，用hashmap，存旧的node和新建一个node，再做一次遍历对新的node进行链接，最后返回hashmap里的value
 269	Alien Dictionary 31.8%	Hard	
