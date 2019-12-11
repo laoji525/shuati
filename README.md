@@ -853,8 +853,8 @@ Bulls and Cows	40.2%	Easy
 Pascal's Triangle	47.4%	Easy	
 131	
 Palindrome Partitioning	42.2%	Medium	
-109	
-Convert Sorted List to Binary Search Tree	42.0%	Medium	
+109	Convert Sorted List to Binary Search Tree	42.0%	Medium	
+递归，传入开始点和结束点，用while，fast，slow找中间node，中间node作为root，call递归方程，左节点传第一个点和中间node，右节点传中间下一个和最后节点
 509	
 Fibonacci Number	66.7%	Easy	
 129	
