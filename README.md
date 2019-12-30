@@ -586,8 +586,8 @@ Delete Node in a BST	40.5%	Medium
 Sliding Window Median	33.4%	Hard	
 779	
 K-th Symbol in Grammar	37.6%	Medium	
-148	
-Sort List	36.7%	Medium	
+148	Sort List	36.7%	Medium	
+并排，先用fast，slow找中点，用prev.next = null切断连接，用递归把所有节点都打散，前后两个节点进mergeSort，一个dummy用来return，一个tmp节点记录新list，while循环两个节点都不为空，小的放进新list，循环结束把没到结尾的list接上新list，最后返回dummy
 409	Longest Palindrome	48.5%	Easy	
 1用set，遍历s，set里有就remove，ans++，没有就放进set，res * 2，最后set如果不是空的res+1
 2 用array写hashmap，记录每个字母的频率，遍历array里每个字母，ans = n / 2 * 2，ans有一次+1的机会，最后返回ans
