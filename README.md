@@ -47,8 +47,8 @@ Deep copy一个linkedlist，用hashmap，存旧的node和新建一个node，再�
 两个都用dfs，都用preorder遍历，都写一个help method帮助递归，serialize用stringbuilder，每次递归都往后append当前节点的val，deserialize用一个list存每个string作为node，如果list的0是零就返回null节点，否则新建新节点val是list 0，再对当前节点的左右进行preorder遍历
 772	Basic Calculator III 42.1%	Hard	
 
-207	
-Course Schedule	38.8%	Medium	
+207	Course Schedule	38.8%	Medium	
+拓扑排序+BFS；用arrayList的数组构建图，int的数组做indegree，index就是课号，声明一个queue做bfs，一个count记录满足条件的课的数量；第一个for循环先new graph的每个arrayList；第二个for循环构建indegree和graph；第三个for循环遍历indegree，没有上家的课放进queue里count加一；while循环开始做bfs，queue拿出第一个course，for循环遍历在同一门课的下家，在indegree里减一，如果indegree这门课是0，就是满足条件的课，放进bfs，count加一；while结束最后返回count是否等于numCourses
 295	
 Find Median from Data Stream	38.0%	Hard	
 642	
