@@ -410,8 +410,8 @@ Data Stream as Disjoint Intervals	44.1%	Hard
 635	
 Design Log Storage System
 55.6%	Medium	
-438	
-Find All Anagrams in a String	38.0%	Medium	
+438	Find All Anagrams in a String	38.0%	Medium	
+双指针滑动窗口问题，用一个int array存26个字母的频率作为hashtable；start是窗口的左边end是右边，用diff表示还需要多少个字母能满足条件；先把end移动到target的长度的位置，同时看有没有满足条件放进res；然后是while循环滑动窗口，先看左边是不是符合的字母，是的话diff加一，hashtable加一左边右移一位，然后看右边，hashtable先减一，然后看频率是否大于0，是的话说明符合条件是anagram的一部分，diff减一，如果diff是0，当前窗口是anagram，左边放进res，然后右边右移一位；最后返回res
 778	
 Swim in Rising Water	48.6%	Hard	
 1019	
