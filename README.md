@@ -889,8 +889,8 @@ Odd Even Linked List	50.1%	Medium
 Print in Order	58.5%	Easy	
 61	
 Rotate List	27.8%	Medium	
-739	
-Daily Temperatures	60.4%	Medium	
+739	Daily Temperatures	60.4%	Medium	
+用递减stack存index，for循环遍历T数组，用一个while循环做判断，把当前温度和stack的第一个的温度比较，看是不是更热，如果是的话把stack第一个pop出来，这个index就可以算出距离，放进res数组里，while判断结束把当前i放进stack，因为int数组默认是0，所以不用再赋值0了，最后返回res
 217	
 Contains Duplicate	52.9%	Easy	
 35	
