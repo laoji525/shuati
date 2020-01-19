@@ -735,7 +735,7 @@ One Edit Distance
 Design Circular Queue	40.4%	Medium	
 141	Linked List Cycle	37.8%	Easy	
 1 set记录到过的节点，碰到一样的就返回true，while结束返回false
-2 双指针，一个走快一个走慢，while 慢!= 快，如果快走到null就返回false，while结束返回true
+2 双指针，因为如果没有cycle肯定会走到null node，一个走快一个走慢，while 慢!= 快，如果快走到null就返回false，while结束返回true
 231	Power of Two	42.2%	Easy	
 While 是偶数，n除以2，最后判断是不是1
 125	Valid Palindrome	32.0%	Easy	
