@@ -797,8 +797,8 @@ Path Sum II	41.8%	Medium
 Count of Smaller Numbers After Self	38.9%	Hard	
 877	
 Stone Game	62.0%	Medium	
-406	
-Queue Reconstruction by Height	60.6%	Medium	
+406	Queue Reconstruction by Height	60.6%	Medium	
+重写compare对people数组排序，身高从大到小，如果一样第二位从小到大；创建一个list存结果，遍历排序好的数组，用list的add(#,#)method，把当前的一维数组放进他的第二位做index的位置，因为如果是小的数并不会影响到他的第二位前面有几个大的数，最后把list转换成二维数组return
 166	
 Fraction to Recurring Decimal	19.8%	Medium	
 69	
