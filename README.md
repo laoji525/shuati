@@ -653,8 +653,8 @@ Frog Jump	36.8%	Hard
 Tenth Line	33.9%	Easy	
 581	Shortest Unsorted Continuous Subarray	30.4%	Easy	
 画图，从左往右从右往左遍历，声明一个flag，当开始unsorting了flag变true，找最小值，同样操作找最大值，然后在做两次左右遍历，小于最小数和大于最大数的就是起点和终点，返回长度
-309	
-Best Time to Buy and Sell Stock with Cooldown	44.6%	Medium	
+309	Best Time to Buy and Sell Stock with Cooldown	44.6%	Medium	
+DP题，用两个buy和sell数组记录如果当前动作是买或者卖的最大收益，sell数组的转移方程是max不卖就是前一天的sell或者卖就是前一天的买加当前的价格，buy数组的转移方程是max不买就是前一天的buy或者买就是前两天的卖减当天的价格因为有cooldown所以是要隔一天。最后返回两个数组的最后一位的max；不过可以直接返回sell，因为最后一天买肯定会亏钱。看了别人答案dp数组可以只用两个int替代，以后再说吧
 1029	Two City Scheduling	54.3%	Easy	
 正好一半，贪心思想，按a城减b城的cost的差值排序，然后遍历array，前一般人去a，后移半人去b
 63	
