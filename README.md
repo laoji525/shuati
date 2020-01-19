@@ -416,8 +416,8 @@ Design Log Storage System
 Swim in Rising Water	48.6%	Hard	
 1019	
 Next Greater Node In Linked List	57.0%	Medium	
-287	
-Find the Duplicate Number	50.6%	Medium	
+287	Find the Duplicate Number	50.6%	Medium	
+二分搜索，mid是中位数，给的数组是从1到n，所以多出来的那个数会让mid左或右的density变大，用一个for循环遍历数组记多少个数不大于mid，然后把mid给low或者high，最后返回low
 929	Unique Email Addresses	69.4%	Easy	
 String操作，用set存unique邮箱，split分割@，后面的是domian，split分隔+，只取0，再拼成email放进set，最后返回set。Size（）；
 96	
