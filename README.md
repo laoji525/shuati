@@ -420,9 +420,8 @@ Next Greater Node In Linked List	57.0%	Medium
 二分搜索，mid是中位数，给的数组是从1到n，所以多出来的那个数会让mid左或右的density变大，用一个for循环遍历数组记多少个数不大于mid，然后把mid给low或者high，最后返回low
 929	Unique Email Addresses	69.4%	Easy	
 String操作，用set存unique邮箱，split分割@，后面的是domian，split分隔+，只取0，再拼成email放进set，最后返回set。Size（）；
-96	
-Unique Binary Search Trees
-47.3%	Medium	
+96	Unique Binary Search Trees	47.3%	Medium	
+数学DP题，画图，从1到n；0做root是1个，1root是1个；2做root，左树一个，右0个然后+=1做节点的结果；3做root，左树两个，右0个，加等2做root，左树一个右树一个，加等1做root，左树0右树2个；当i=3，3组树是2-3-0， 1-2-1， 0-1-2；当i=4，4组树是3-4-0，2-3-1，1-2-2，0-1-3；所以代码是两个for循环i2到n，j1到i，转移方程dp i += dp j - 1 * dp i - j；最后返回dp最后一位；
 402	
 Remove K Digits	26.9%	Medium	
 742	
@@ -899,8 +898,8 @@ Search Insert Position	41.1%	Easy
 Number of Dice Rolls With Target Sum	49.8%	Medium	
 18	
 4Sum	31.3%	Medium	
-142	
-Linked List Cycle II	33.1%	Medium	
+142	Linked List Cycle II	33.1%	Medium	
+141的followup这次是return环开始的节点；还是快慢双指针，相遇的时候break，然后在其中一个初始到head，这次两个都只走一步，相遇，return节点；因为快指针走的距离是head到环起点加起点到相遇的距离，两个同步走就相当于一起减掉起点到相遇的距离
 47	
 Permutations II	41.7%	Medium	
 905	
