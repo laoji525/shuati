@@ -257,8 +257,8 @@ Max Points on a Line	16.0%	Hard
 Candy	29.0%	Hard	
 91	Decode Ways 22.7%	Medium	
 Dp题，注意dp的index比string的index多一位，从idx2开始遍历，分别去前一位的integer oneD和前两位的integer twoD，如果oneD是1到9，dp[i] 加等前一位dp，如果twoD是10到26，dp[i] 再加等前两位的dp，最后返回dp数组的最后一位
-236	
-Lowest Common Ancestor of a Binary Tree	38.9%	Medium	
+236	Lowest Common Ancestor of a Binary Tree	38.9%	Medium	
+分治递归，用DFS遍历BT，到null就返回null，如果p或q找到就返回当前node，判断有3种情况，1.如果返回的左和右都是非null，说明当前node就是要的LCA；2.如果左是null说明pq不在左边返回右node；3.如果右是null说pq不在右边，返回左node
 489	
 Robot Room Cleaner
 65.7%	Hard	
