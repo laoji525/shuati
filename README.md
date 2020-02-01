@@ -262,8 +262,8 @@ Lowest Common Ancestor of a Binary Tree	38.9%	Medium
 489	
 Robot Room Cleaner
 65.7%	Hard	
-98	
-Validate Binary Search Tree	26.1%	Medium	
+98	Validate Binary Search Tree	26.1%	Medium	
+中序遍历一个bst，val一定是从小到大的；所以中序遍历这个bst，放进list里，在遍历list看是否是有序的
 55	Jump Game	32.4%	Medium	
 1. DP题，dp 0 为true，两个for循环遍历，i从1到最后，j从0到i，如果dp[j]为true并且dp[j]+j的结果大于等于i，说明能走到i，dp[i]就为true，最后返回dp最后一位
 2.贪心思想，从后向前遍历，声明一个lastPos存能走到的最左边位置初始是最后一位，for循环如果当前位置能覆盖到lastPos，lastPos改成当前i，最后返回lastPos是否为0
