@@ -383,8 +383,9 @@ Palindrome Pairs	31.6%	Hard
 Maximum Gap	33.1%	Hard	
 228	
 Summary Ranges	36.6%	Medium	
-105	
-Construct Binary Tree from Preorder and Inorder Traversal	42.6%	Medium	
+105	Construct Binary Tree from Preorder and Inorder Traversal	42.6%	Medium	
+ 要画图看，preorder的第一个肯定是root，然后在inorder里找到他，他的左边一定是他的左树，右边是右树，所以主要是三个位置，preoder的起始点就是当前节点的val，inorder的起始点和终点就是他下一个结点所需要的所有val；用递归建树；递归结束的判断是preoder或者inorder用完；先new当前node，然后for循环遍历在inorder里找到对应的val的index，然后递归左树和右树，比较难想的是右节点的preStart，当前preStart加左树的长度加一，画图能看出来
+//优化：先把inorder的值和位置放进hashmap里，就不用每次都遍历一遍inorder，时间复杂度从O(n^2)降到O(n)
 980	
 Unique Paths III	71.2%	Hard	
 70	Climbing Stairs	44.8%	Easy	
