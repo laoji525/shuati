@@ -762,8 +762,8 @@ Longest Consecutive Sequence	42.4%	Hard
 Intersection of Two Arrays II	48.7%	Easy	
 77	
 Combinations	49.2%	Medium	
-647	
-Palindromic Substrings	57.7%	Medium	
+647	Palindromic Substrings	57.7%	Medium	
+从中心展开的暴力解；遍历string，以当前char和+1为中心向左右展开判断左右是否相同；O(n^2)反正和DP的时间复杂度一样写个简单的
 771	
 Jewels and Stones	83.5%	Easy	
 160	
