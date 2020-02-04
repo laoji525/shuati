@@ -487,8 +487,8 @@ Find Peak Element	41.7%	Medium
 A^b^b = a; bit操作，res ^当前n，最后剩的res就是single number
 1010	Pairs of Songs With Total Durations Divisible by 60	45.7%	Easy	
 Two sum 变种，把数字%60，就是two sum，k是60，用hashmap做
-75	
-Sort Colors	42.9%	Medium	
+75	Sort Colors	42.9%	Medium	
+题目要求是计数排序，就是记录多少个0，1，2，然后在原数组里填上数字；followup要求onepass，就一次for循环遍历，用双指针；遍历时候三种情况，0swap，i进一位，left右移；1，i进一位；2swap，i不动，right左移
 176	Second Highest Salary	28.0%	Easy	
 用 limit 和offset
 234	Palindrome Linked List	36.8%	Easy	
