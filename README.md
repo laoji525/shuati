@@ -935,6 +935,8 @@ pq，拿出前两个相加，放回去，while到size是1，返回sum
 494. Target Sum		Medium
 https://blog.csdn.net/mine_song/article/details/70216562
 DP；等式推导，positive的和减negative的和等于target，推出positive的和等于target + nums的和除以二；问题就变成只要知道positive的和有几种可能就行；然后是动态规划，dp数组表示加起来的和是这个数有多少种可能，先遍历nums数组，然后从大到小for循环；具体步骤就像，当前是1，目标9，9就是加等8的个数，目标8，8就是加等7的个数，依此类推；最后返回dp目标的个数
+416. Partition Equal Subset Sum		Medium
+DP;能被分成两部分那么所有数的和的一半一定能被数组里的数组成；所以先算和，和一定要是偶数，dp的boolean数组表示这个数能不能被加到，dp0是true；遍历数组，然后从大到小for循环，转移方程是dp中这个数减当前遍历的数ordp这个数；最后返回dp目标数字
 
 
 Amazon BQ
