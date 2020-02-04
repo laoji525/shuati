@@ -932,6 +932,9 @@ Remove Duplicates from Sorted Array	41.6%	Easy
 2.因为取值范围是0到1000,建一个大小是1001的hashtable就行,遍历array存频率,table从大到小遍历,如果table[i]为1直接return i
 1167. Minimum Cost to Connect Sticks	Medium
 pq，拿出前两个相加，放回去，while到size是1，返回sum
+494. Target Sum		Medium
+https://blog.csdn.net/mine_song/article/details/70216562
+DP；等式推导，positive的和减negative的和等于target，推出positive的和等于target + nums的和除以二；问题就变成只要知道positive的和有几种可能就行；然后是动态规划，dp数组表示加起来的和是这个数有多少种可能，先遍历nums数组，然后从大到小for循环；具体步骤就像，当前是1，目标9，9就是加等8的个数，目标8，8就是加等7的个数，依此类推；最后返回dp目标的个数
 
 
 Amazon BQ
