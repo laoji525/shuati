@@ -867,8 +867,8 @@ Wildcard Matching	23.2%	Hard
 Invert Binary Tree	59.2%	Easy	
 621	
 Task Scheduler	46.1%	Medium	
-290	
-Word Pattern	35.4%	Easy	
+290	Word Pattern	35.4%	Easy	
+用hashmap记录char和string，因为必须是一一对应，在用一个set记录string看有没有出现过；string split把字符串切割，遍历pattern和words，如果map里有，看能不能对应起来，否则再看set有没有出现过，如果有返回false，否则放进map和set里
 559	
 Maximum Depth of N-ary Tree	66.0%	Easy	
 977	
