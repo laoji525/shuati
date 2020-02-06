@@ -941,7 +941,8 @@ DP;能被分成两部分那么所有数的和的一半一定能被数组里的�
 画图，从1D开始，记住负负得正所以不用管哪个在左，推导出两个关系式；然后把套在x和y上
 532. K-diff Pairs in an Array		Easy
 hashmap存数字和频率，遍历map，如果k是0，就记录频率大于1的，否则记录key+k的个数
-
+414. Third Maximum Number	Easy
+pq，因为是unique所以还要一个set，遍历数组，pq只要3个，pq默认头上最小，所以只要3个，头上那个就是第三大的，按照return要求size是2再去掉一个；return peek
 
 Amazon BQ
 Practice using the STAR Method on these common behavioral interviewing questions: 
