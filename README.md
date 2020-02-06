@@ -875,8 +875,8 @@ Maximum Depth of N-ary Tree	66.0%	Easy
 Squares of a Sorted Array	71.8%	Easy	
 190	
 Reverse Bits	32.5%	Easy	
-181	
-Employees Earning More Than Their Managers	49.9%	Easy	
+181	Employees Earning More Than Their Managers	49.9%	Easy	
+select employee from 表a，表b where a。manageId是b。id and a的salary 大于b的salary
 100	Same Tree	50.5%	Easy	
 递归，四种情况，都为null，一个为null，值不同，和值相同则进递归
 84	
@@ -939,6 +939,8 @@ DP；等式推导，positive的和减negative的和等于target，推出positive
 DP;能被分成两部分那么所有数的和的一半一定能被数组里的数组成；所以先算和，和一定要是偶数，dp的boolean数组表示这个数能不能被加到，dp0是true；遍历数组，然后从大到小for循环，转移方程是dp中这个数减当前遍历的数ordp这个数；最后返回dp目标数字
 836. Rectangle Overlap		Easy
 画图，从1D开始，记住负负得正所以不用管哪个在左，推导出两个关系式；然后把套在x和y上
+532. K-diff Pairs in an Array		Easy
+hashmap存数字和频率，遍历map，如果k是0，就记录频率大于1的，否则记录key+k的个数
 
 
 Amazon BQ
