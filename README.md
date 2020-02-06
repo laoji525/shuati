@@ -803,8 +803,8 @@ Stone Game	62.0%	Medium
 Fraction to Recurring Decimal	19.8%	Medium	
 69	
 Sqrt(x)	31.9%	Easy	
-114	
-Flatten Binary Tree to Linked List	43.6%	Medium	
+114	Flatten Binary Tree to Linked List	43.6%	Medium	
+先画图弄清楚操作步骤；从root出发，先看有没有左节点，如果有则把左节点练到原右节点，把原右节点连到原左节点的最后一个右节点后面；然后向右迭代
 73	
 Set Matrix Zeroes	40.6%	Medium	
 242	
@@ -832,7 +832,7 @@ N-ary Tree Level Order Traversal	60.3%	Easy
 179	
 Largest Number	26.3%	Medium	
 337	House Robber III	48.7%	Medium	
-
+DP+DFS；DP数组0是不加当前节点，1是加当前节点；从root开始递归；递归结束就是走到null，返回两个0；递归进左右树；当前不加那就加左右里的加或不加里大的；当前加那就不加左右；最后返回也是比较root加或不加
 60	
 Permutation Sequence	33.8%	Medium	
 811	
