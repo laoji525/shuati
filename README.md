@@ -203,8 +203,8 @@ BFS遍历，queue存treenode，while里用for循环维护同一层的treenode，
 759	
 Employee Free Time
 62.2%	Hard	
-64	
-Minimum Path Sum	48.1%	Medium	
+64	Minimum Path Sum	48.1%	Medium	
+DP，不需要extra space直接在原数组上改；每个点只有从上和左两个方向过来，所以+=这两个位置的min就是当前点的min path；先从原点走右和下直线，计算path sum；然后遍历二维数组，当前点+=上和左点的min；最后返回终点的sum
 572	Subtree of Another Tree	42.0%	Easy	
 100题sameTree的变种，大树进左树递归or右树递归or进sameTree
 116	Populating Next Right Pointers in Each Node	38.9%	Medium	
@@ -534,8 +534,8 @@ Camelcase Matching	56.2%	Medium
 Nth Highest Salary	27.3%	Medium	
 332	
 Reconstruct Itinerary	32.3%	Medium	
-152	
-Maximum Product Subarray	29.8%	Medium	
+152	Maximum Product Subarray	29.8%	Medium	
+DP;只用算最大值不用知道位置，所以只用一次遍历记录最大值就行因为有负数和0，负数乘负数会变成正数，所以再记录最小数；如果当前数是正数，就是正常的算max和min；else，max是乘min，min是乘之前的max；同时记录max为res；最后返回res
 28	
 Implement strStr()	32.7%	Easy	
 277	Find the Celebrity 37.8%	Medium	
