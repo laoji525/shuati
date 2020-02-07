@@ -126,8 +126,8 @@ LFU Cache	29.6%	Hard
 把interval进行array排序，重写comparator，维护newInter，for循环遍历intervals，当当前开始时间小于等于newInter的结束时间，就出现overlap，改写newinter，否则没有overlap，res加进这个array，newInter改为当前interval，最后返回array的结果
 79	Word Search	32.1%	Medium	
 两个for循环遍历二维array，进dfs遍历，维护index，进下一个字母index加一，到过的字母改成#标记为到过，遍历完在还愿字母，boolean用or连接
-76	
-Minimum Window Substring	31.6%	Hard	
+76	Minimum Window Substring	31.6%	Hard	
+双指针滑窗；先把t存进hashmap；count表示还有多少个char没在窗里初始是t的长度；先推进end，char在map里，count-1，map里的-1，一直到count==0，这时候start和end就包含了t，然后推进start，得到minLen和minStart的值，如果while里把一个t里的char推出去了，start推进就结束；end继续推进直到找到刚刚推出去的那个char，这时候count==0；最后通过记录下的minStart和minLen返回substring
 997	Find the Town Judge	49.5%	Easy	
 找法官，法官不信任何人，法官被除了自己的人都相信，遍历找到就行
 20	Valid Parentheses	37.1%	Easy	
