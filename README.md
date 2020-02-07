@@ -945,6 +945,8 @@ hashmap存数字和频率，遍历map，如果k是0，就记录频率大于1的�
 pq，因为是unique所以还要一个set，遍历数组，pq只要3个，pq默认头上最小，所以只要3个，头上那个就是第三大的，按照return要求size是2再去掉一个；return peek
 256. Paint House		Easy
 DP,假设第一个房子分别用红黄绿三个颜色，用三个DP数组记录价格，遍历数组，直接对原数组操作，颜色不相邻就行，最后返回最后一个房子的三个颜色中的最小值
+339. Nested List Weight Sum		Easy
+BFS同层遍历，while里维护level，res+=当前数乘level，
 
 Amazon BQ
 Practice using the STAR Method on these common behavioral interviewing questions: 
