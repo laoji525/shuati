@@ -319,8 +319,8 @@ Serialize and Deserialize BST	48.3%	Medium
 Gas Station	34.7%	Medium	
 1026	
 Maximum Difference Between Node and Ancestor	61.0%	Medium	
-62	
-Unique Paths	48.7%	Medium	
+62	Unique Paths	48.7%	Medium	
+DP，只走直线，每个点都是1path，所以把直线用1填满，遍历数组，转移方程是自己的上和左相加；优化可以发现，二维DP可以只用一位数组就够了，因为二维遍历本来就是一行一行遍历，新数可以就是原数加左边就行，空间复杂度从O(mn)降到O(n)
 88	Merge Sorted Array	36.5%	Easy	
 给了nums1和nums2的长度，减一就是各自的index，总index是长度加起来减一，while循环比大小从后面放进nums1，nums1没到0不用管，nums2没到0的话再用一个while循环把剩下的nums2放进nums1
 208	Implement Trie (Prefix Tree)	39.9%	Medium	
