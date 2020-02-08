@@ -116,8 +116,8 @@ Sliding Window Maximum	39.0%	Hard
 数学问题，array基数个，定位到中间，取中位数和后一个数比较，可以排除掉一半的数，start 大于等于end，结束while循环
 206	Reverse Linked List	56.2%	Easy	
 三个node操作，curr存当前，head推进，prev存前一个，curr的next指向prev，prev推进到curr，一直到head到最后null
-140	
-Word Break II	27.9%	Hard	
+140	Word Break II	27.9%	Hard	
+DFS w/memorization; 用hashtable记录用过的字符串和他映射的list；如果DFS碰到过s，直接返回映射的list；如果s长度是0就是字符串走完，返回res；for循环遍历dict，如果当前字符串是s的头，就进DFS，字符串切掉头；DFS结束返回的是list字符串，把list转成一句话的字符串加上空格；遍历结束把字符串和结果的list放进map做memorization；最后返回list
 387	First Unique Character in a String	50.5%	Easy	
 String转成char []， 一个int[]存26个字母的频率，遍历char[]，频率为1返回index，最后返回-1
 460	
