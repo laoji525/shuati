@@ -29,8 +29,8 @@ Bfs遍历bt，用一个for循环维护同一层的节点，同一层的节点放
 新建一个dummy listNode，声明一个carry和sum，当l1或l2不为空或carry不为零，进while循环，sum是两个node点val相加，carry是sum的十位数，新建node curr用sum的个位，两个listnode都到下一个节点，返回dummy。Next
 909	Snakes and Ladders	35.0%	Medium	
 写一个help method，左上从0开始是坐标，左下从1开始是游戏的序号，用bfs从左下开始遍历遍历,中间for循环是1-6的步数，当前点不是-1就到目标点，当用一个hashmap记录节点的最小步数，当走到终点，返回终点的步数
-472	
-Concatenated Words	36.2%	Hard	
+472	Concatenated Words	36.2%	Hard	
+139.word break的衍生;139是DP，判断能否用dict组成字符串；直接用现成的code做help函数；把words放进set，for循环遍历数组；每个word和set进help函数，true就放进res
 165	Compare Version Numbers	24.3%	Medium	
 先放进string array里， Length是两个的最大长度，for循环到length，两个当前string都转Integer，没有就给0，两个integer比较大小，出现不一样就返回compare的值
 127	Word Ladder	25.1%	Medium	
