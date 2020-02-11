@@ -72,8 +72,8 @@ Bfs遍历，一个二维boolean array记录是否到过，
 用arrayDeque实现stack，override next和hasnext，在声明一个tmp stack，先把nestedIterator放进tmp里，再把tmp放进stack里	
 675	
 Cut Off Trees for Golf Event	31.4%	Hard	
-124	
-Binary Tree Maximum Path Sum	30.7%	Hard	
+124	Binary Tree Maximum Path Sum	30.7%	Hard	
+DFS, bottomup递归; 递归到null停下返回0,就是和0取max;return是只返回左或右一条线的path,当前节点的最大数是取max和当前点加左加右
 588	
 Design In-Memory File System
 41.0%	Hard	
@@ -681,8 +681,8 @@ Car Pooling	57.7%	Medium
 DFS遍历，看左节点，如果是叶节点，加进sum否则进左节点递归，再看右节点递归
 223	
 Rectangle Area	36.2%	Medium	
-41	
-First Missing Positive	29.5%	Hard	
+41	First Missing Positive	29.5%	Hard	
+对数组的交换操作;要求是正数,数组里的数应该是能把1到数组length填满,所以交换完成后的数组应该是1,2,3,4...n;for遍历数组,用while循环不停的交换i和nums[i] - 1的值,知道i上面的数符合要求或者不再1到n区间里为止;然后在做一次for遍历,第一个不符合要求的就是要找的数,return i + 1
 378	
 Kth Smallest Element in a Sorted Matrix	50.4%	Medium	
 682	Baseball Game	61.6%	Easy	
