@@ -949,7 +949,8 @@ DP,假设第一个房子分别用红黄绿三个颜色，用三个DP数组记录
 BFS同层遍历，while里维护level，res+=当前数乘level，
 1102. Path With Maximum Minimum Value	Medium
 BFS遍历矩阵，每个点只走四个方向里最大的那个点；用pq代替queue存坐标，按值大到小存；然后是普通的BFS作法，走到终点提前返回，走过的点换成-1记录visited
-
+1268. Search Suggestions System		Medium
+Trie字典树；每个字节里就建一个suggestion的list；先数组排序；遍历数组，里面遍历字符串，把整个products里所有的字符串放进trie里，同时每个字母放进不大于3个的suggestion；然后遍历搜索word，进到每个字母的trie节点，如果是非空就直接把suggestion放进res里
 Amazon BQ
 Practice using the STAR Method on these common behavioral interviewing questions: 
 • Describe a situation in which you were able to use persuasion to successfully convince someone to see things your way.
