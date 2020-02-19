@@ -951,6 +951,8 @@ BFS同层遍历，while里维护level，res+=当前数乘level，
 BFS遍历矩阵，每个点只走四个方向里最大的那个点；用pq代替queue存坐标，按值大到小存；然后是普通的BFS作法，走到终点提前返回，走过的点换成-1记录visited
 1268. Search Suggestions System		Medium
 Trie字典树；每个字节里就建一个suggestion的list；先数组排序；遍历数组，里面遍历字符串，把整个products里所有的字符串放进trie里，同时每个字母放进不大于3个的suggestion；然后遍历搜索word，进到每个字母的trie节点，如果是非空就直接把suggestion放进res里
+456. 132 Pattern	Medium
+stack单调栈，数组里要有三个数小大中；stack存大到小的单调栈作为第二个数也就是最大数的候补，third是stack最后淘汰掉的数，一开始赋值负无穷；遍历数组存stack直到出现比peek大的数，把stack里比他小的都pop掉，最后一个pop出来的数赋值给third；如果当前数比第三数小就找到了这三个数，返回true
 Amazon BQ
 Practice using the STAR Method on these common behavioral interviewing questions: 
 • Describe a situation in which you were able to use persuasion to successfully convince someone to see things your way.
