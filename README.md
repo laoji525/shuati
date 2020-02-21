@@ -801,8 +801,8 @@ Stone Game	62.0%	Medium
 重写compare对people数组排序，身高从大到小，如果一样第二位从小到大；创建一个list存结果，遍历排序好的数组，用list的add(#,#)method，把当前的一维数组放进他的第二位做index的位置，因为如果是小的数并不会影响到他的第二位前面有几个大的数，最后把list转换成二维数组return
 166	
 Fraction to Recurring Decimal	19.8%	Medium	
-69	
-Sqrt(x)	31.9%	Easy	
+69	Sqrt(x)	31.9%	Easy	
+BS;从1到x做二分搜索，判断条件是x / mid 和mid + 1
 114	Flatten Binary Tree to Linked List	43.6%	Medium	
 先画图弄清楚操作步骤；从root出发，先看有没有左节点，如果有则把左节点练到原右节点，把原右节点连到原左节点的最后一个右节点后面；然后向右迭代
 73	
