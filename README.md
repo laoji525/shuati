@@ -755,8 +755,8 @@ Connecting Cities With Minimum Cost
 51.0%	Medium	
 241	
 Different Ways to Add Parentheses	51.1%	Medium	
-128	
-Longest Consecutive Sequence	42.4%	Hard	
+128	Longest Consecutive Sequence	42.4%	Hard	
+在连续一组数字，他们的左右边界length应该都是一样的，hashmap存数字和他的length；遍历数组，当前数往左和右找映射长度，存当前数的长度同时更新左右边界的长度；因为有if是否在map的判断，所有拿出过的数都不会再遍历，结果只需要找max
 243	Shortest Word Distance 58.1%	Easy	
 遍历array，如果word1word2出现，记录位置，位置有效就算距离，维护最小的距离，最后返回min
 350	
