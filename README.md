@@ -106,8 +106,8 @@ Longest Substring with At Most K Distinct Characters
 Sliding window, hashmap存char最后出现的位置，声明start位置和longest长度，遍历string，如果当前char出现过并且比start大，start=当前+1，每次计算longest长度，把当前c放进map里，最后返回longest
 314	Binary Tree Vertical Order Traversal 41.6%	Medium	
 用map存列数和list，list存每个节点的值，一个queue存node用来bfs遍历，一个queue存col#，和queue和map同步操作，左减右加，map存col#和list，最后返回map的values
-239	
-Sliding Window Maximum	39.0%	Hard	
+239	Sliding Window Maximum	39.0%	Hard	
+滑窗，deque双向队列；deque存的是下标，代表的数在deque里是单调递减的，deque第一个数代表的是滑窗里的最大数同时也是去掉没用的小数后的最左边的值；遍历数组，先判断最大值和左边界位置，如果要划出去就poll掉first，然后用while判断当前值和deque最右边的index所代表的nums中的值，如果当前值大，就poll掉，维持deque里是下标代表的值单调递减；左边界大于等0就往res里放最左边的值
 155	Min Stack	38.3%	Easy	
 写双向链表实现stack，维护min的node，写一个method找到min的node
 994	Rotting Oranges	46.4%	Easy	
@@ -603,8 +603,8 @@ Subsets II	43.3%	Medium
 回溯，DFS遍历，没什么好说的，到叶节点，放进res
 10	
 Regular Expression Matching	25.6%	Hard	
-72	
-Edit Distance	38.9%	Hard	
+72	Edit Distance	38.9%	Hard	
+DP;用两个例子画图表；先看从空到word，需要的操作就是当前长度，所以第0行和第0列可以直接确定；然后可以发现每个点是他左 左上 上三个点最小数加一，分别对应减改删操作，那就能搞出转移方程了；二维遍历返回右下角的dp
 92	
 Reverse Linked List II	35.8%	Medium	
 1104	Path In Zigzag Labelled Binary Tree	70.4%	Medium	
