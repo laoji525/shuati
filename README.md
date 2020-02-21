@@ -49,8 +49,8 @@ Deep copy一个linkedlist，用hashmap，存旧的node和新建一个node，再�
 
 207	Course Schedule	38.8%	Medium	
 拓扑排序+BFS；用arrayList的数组构建图，int的数组做indegree，index就是课号，声明一个queue做bfs，一个count记录满足条件的课的数量；第一个for循环先new graph的每个arrayList；第二个for循环构建indegree和graph；第三个for循环遍历indegree，没有上家的课放进queue里count加一；while循环开始做bfs，queue拿出第一个course，for循环遍历在同一门课的下家，在indegree里减一，如果indegree这门课是0，就是满足条件的课，放进bfs，count加一；while结束最后返回count是否等于numCourses
-295	
-Find Median from Data Stream	38.0%	Hard	
+295	Find Median from Data Stream	38.0%	Hard	
+用两个heap存数据；一个升一个降，一个先奇数另一个先偶数，哪个对哪个不重要，画出来就能看出来哪个是大哪个是小了；操作是一个heap先放然后拿出头放进另一个heap里；find也是一样用具体操作来看
 642	
 Design Search Autocomplete System
 39.0%	Hard	
