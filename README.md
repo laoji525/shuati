@@ -11,6 +11,7 @@ Hashmap记录补数和index，遍历出现补数就输出两个index
 写一个method返回从中心开始的最大回文的长度，主method维护一个最大长度和起点start，当helper长度大于maxlen了，记录回文的start index，return起点加maxlen的substring
 146	LRU Cache	26.8%	Medium	
 用linkedhashmap实现congstructor（capacity，0.75f，true），override Boolean removeEldestEntry（map.Entry <Integer， Integer> eldest）return super.size() > capacity
+//Double linked node 和hashmap，建DLN的class，有前和后的指针;LRU里建hashmap和head和tail的DLN，head是最近用过的tail是最不用的，写四个method，加node，去node，移到head，去掉tail；get就是用hashmap的get，call移到head；put先看hashmap里有没有，没有就新建然后放进hashmap，看有没有超过容量，有就去掉tail；如果有只要更新node的value就行，call移到head
 200	Number of Islands	42.5%	Medium	
 遍历二维数组，当出现1，ans++然后进dfs，dfs把当前点四周的1都变成0，dfs结束条件是到边界或者到0
 819	Most Common Word	42.4%	Easy	
