@@ -955,6 +955,8 @@ Trie字典树；每个字节里就建一个suggestion的list；先数组排序�
 stack单调栈，数组里要有三个数小大中；stack存大到小的单调栈作为第二个数也就是最大数的候补，third是stack最后淘汰掉的数，一开始赋值负无穷；遍历数组存stack直到出现比peek大的数，把stack里比他小的都pop掉，最后一个pop出来的数赋值给third；如果当前数比第三数小就找到了这三个数，返回true
 866. Prime Palindrome	Medium
 就写两个method，reverse和isPrime，prime加到开根号就行；偶数长度的回文会被11整除
+373	Find K Pairs with Smallest Sums	35.3%	Medium	
+重写pq comparator，按两个数的sum小到大排序，遍历两组数组的所有组合，放进pq中，res从pq拿结果出来
 Amazon BQ
 Practice using the STAR Method on these common behavioral interviewing questions: 
 • Describe a situation in which you were able to use persuasion to successfully convince someone to see things your way.
