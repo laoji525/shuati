@@ -563,8 +563,8 @@ Height Checker	69.0%	Easy
 272	
 Closest Binary Search Tree Value II
 46.1%	Hard	
-230	
-Kth Smallest Element in a BST	52.8%	Medium	
+230	Kth Smallest Element in a BST	52.8%	Medium	
+BST的inorder遍历就是从小到大排序，DFS遍历，val放进list，最后返回第k个
 729	
 My Calendar I	48.2%	Medium	
 204	Count Primes	29.6%	Easy	
