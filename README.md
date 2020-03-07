@@ -700,8 +700,8 @@ Dfs inorder 遍历
 Partition List	38.1%	Medium	
 106	
 Construct Binary Tree from Inorder and Postorder Traversal	40.5%	Medium	
-547	
-Friend Circles	54.6%	Medium	
+547	Friend Circles	54.6%	Medium	
+DFS回溯，把一个人能走到的所有点走完算一个圈；建一个visited数组，for遍历M数组，没进过就进dfs；for循环遍历当前这个人对应的所有人进DFS同时visited赋值true；dfs结束res+1；最后返回多少个圈
 244	
 Shortest Word Distance II
 48.5%	Medium	
