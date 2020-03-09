@@ -612,8 +612,8 @@ Reverse Linked List II	35.8%	Medium
 数学问题，先画图，用linkedlist声明res，用linkedlist的addfirst method，每层的个数是2的指数，while循环parent节点没到1，先用log找到指数d，然后找到这层的补数，这个node的parent是2^d加补数除以2，把parent存进res，进下个循环，最后返回res
 54	
 Spiral Matrix	31.1%	Medium	
-452	
-Minimum Number of Arrows to Burst Balloons	47.1%	Medium	
+452	Minimum Number of Arrows to Burst Balloons	47.1%	Medium	
+贪心思想，枪只打在气球的最右边；把气球按右边界位置排序，第一枪先打在第0个的最右边；然后for遍历数组，如果上一枪能把当前气球打破，就是枪位置大于左边界位置，就不用打，否则打一枪，位置在当前气球的右边界；最后返回打枪数量
 65	
 Valid Number	14.2%	Hard	
 37	
@@ -719,8 +719,9 @@ Find Leaves of Binary Tree
 115	
 Distinct Subsequences
 35.6%	Hard	
-1004	
-Max Consecutive Ones III	54.3%	Medium	
+1004	Max Consecutive Ones III	54.3%	Medium	
+双指针滑窗；for循环推进右边界，记录0的个数，当超过了K的值，动左边界同时记0；记录滑窗max；
+    //发现里面的while可以改成if，右边界只推进1位，所以while永远只做一次
 81	
 Search in Rotated Sorted Array II	32.7%	Medium	
 120	
