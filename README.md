@@ -446,8 +446,8 @@ Convert Binary Search Tree to Sorted Doubly Linked List
 Find the Closest Palindrome	19.0%	Hard	
 924	
 Minimize Malware Spread	40.5%	Hard	
-797	
-All Paths From Source to Target	71.1%	Medium	
+797	All Paths From Source to Target	71.1%	Medium	
+DFS,回溯;从0开始递归，把当前数放进path，如果走到最后终点了，copy一个path放进res；没到就进递归，for循环遍历下一个点，回溯结束要把最后一个数去掉
 344	Reverse String	63.8%	Easy	
 这要不会写 回家种田吧
 1032	
