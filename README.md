@@ -522,9 +522,8 @@ Remove Nth Node From End of List	34.5%	Medium
 169	Majority Element	53.7%	Easy	
 1因为一定存在majority，排序array，majority就是中间数
 2 用hashmap存数字频率，majority的频率大于nums。Length / 2，遍历keySet（），找到这个key返回
-286	
-Walls and Gates
-50.2%	Medium	
+286	Walls and Gates	50.2%	Medium
+DFS;传入距离做参数，只有当d小于当前位置的值才更新；二维for循环遍历数组，当碰到0进DFS
 355	
 Design Twitter	27.9%	Medium	
 1023	
