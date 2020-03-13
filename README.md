@@ -530,8 +530,8 @@ Design Twitter	27.9%	Medium
 Camelcase Matching	56.2%	Medium	
 541	Reverse String II	45.9%	Easy	
 写两个help method，一个反转char[]， 一个swap method，主method，先把s转成char[]，for循环遍历array，i每次加2k，把start和end传进help method，如果end超过长度-1就传长度-1，最后返回string
-177	
-Nth Highest Salary	27.3%	Medium	
+177	Nth Highest Salary	27.3%	Medium	
+set n = n - 1; limit 1 offset n
 332	
 Reconstruct Itinerary	32.3%	Medium	
 152	Maximum Product Subarray	29.8%	Medium	
@@ -659,6 +659,7 @@ DP题，用两个buy和sell数组记录如果当前动作是买或者卖的最�
 正好一半，贪心思想，按a城减b城的cost的差值排序，然后遍历array，前一般人去a，后移半人去b
 63	
 Unique Paths II	33.6%	Medium	
+DP；63题的衍生；如果当前点是1就到不了直接赋值0；还是只用一维DP数组就够了；dp[0]初始给1；二维遍历从0，0开始，如果当前为1直接赋值0，else加等左边的值因为c为0直接继承上一行的c==0的值所以不要操作；最后返回dp最后一位
 71	
 Simplify Path	29.4%	Medium	
 485	Max Consecutive Ones	55.4%	Easy	
