@@ -290,8 +290,8 @@ Course Schedule II	35.9%	Medium
 Basic Calculator II	34.2%	Medium	
 662	
 Maximum Width of Binary Tree	39.5%	Medium	
-508	
-Most Frequent Subtree Sum	55.2%	Medium	
+508	Most Frequent Subtree Sum	55.2%	Medium	
+DFS自下而上后序遍历；计算每个node的sum，把sum的频率放进hashtable；最后把最大频率的key放进res数组
 361	
 Bomb Enemy
 44.0%	Medium	
