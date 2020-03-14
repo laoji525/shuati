@@ -326,8 +326,8 @@ DP，只走直线，每个点都是1path，所以把直线用1填满，遍历数
 给了nums1和nums2的长度，减一就是各自的index，总index是长度加起来减一，while循环比大小从后面放进nums1，nums1没到0不用管，nums2没到0的话再用一个while循环把剩下的nums2放进nums1
 208	Implement Trie (Prefix Tree)	39.9%	Medium	
 先建一个TrieNode的class，node里存一个node的array，links连接26个字母，一个boolean值是否是最后一个字母，有method Boolean containsKey（char ch），TrieNode get（char ch）, void put (char ch, TrieNode node), void setEnd(), boolean isEnd(); Trie class 里constructor trie，有一个root，method insert（string word），遍历每个char，把每个char放进trieNode，node = 下一个node，写一个searchPrefix method，返回一个前缀是word的trieNode，search method用searchprefix method，判断返回的node是否为空，node是否能做结尾，startwith同样用searchprefix method，不要判断能否做结尾了
-636	
-Exclusive Time of Functions	49.2%	Medium	
+636	Exclusive Time of Functions	49.2%	Medium	
+stack，和有效括号很像，start了就放进stack里，一直到有end就结束最近的那个程序，只有peek的那个程序是正在跑的；维护上一个出现的时间点，int数组存res，下标就是程序的ID；遍历list，把字符串按：分开，if判断start还是end；如果是start，先看stack是否不为空，非空把peek的程序先暂停，把时间段+=进数组的当前程序的时长里；然后把当前的程序ID压进stack，更新时间点；如果是end，就直接pop出最近的程序结束，时间段+=进res数组，更新时间点
 78	Subsets	54.4%	Medium	
 回溯题，DFS递归，DFS里先把tmp list加进res，然后for循环从start 开始到最后一位，把start位的数字加进tmp，然后进递归，递归结束把这个数字remove掉，最后返回res。
 529	
