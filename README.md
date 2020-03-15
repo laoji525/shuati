@@ -274,10 +274,10 @@ Best Time to Buy and Sell Stock IV	26.7%	Hard
 Cheapest Flights Within K Stops	35.8%	Medium	
 706	Design HashMap	56.8%	Easy	
 就用int array存，key的hashcode做index，写一个method计算这个index，constructor里用array fill用-1填满，put get remove都先算index，然后对array操作就行
-384	
-Shuffle an Array	50.7%	Medium	
-900	
-RLE Iterator	50.8%	Medium	
+384	Shuffle an Array	50.7%	Medium	
+完全随机排列必须和之前的数交换；import进random类，nextInt（n）返回0到n的随机数；reset返回成员变量，shuffle返回clone后的数组；写一个swap函数；遍历数组，把当前数和i+1的数交换
+900	RLE Iterator	50.8%	Medium	
+偶数位下标表示下一位奇数位数字的个数；原始数组并不需要真正创建出来，可以直接对A进行操作；成员变量维护当前指针的下标；构造器初始A和curr；next函数，while先判断n和指针位置，指针不能超过最大长度&&当前指针不够n用的话，n先减等当前指针的个数，当前指针推进两位；n满足要求后，如果当前指针超过最大长度，直接返回-1；否则当前指针下标把n用完，返回下标的后一位
 432	
 All O`one Data Structure	30.2%	Hard	
 1022	Sum of Root To Leaf Binary Numbers	58.9%	Easy	
@@ -958,6 +958,8 @@ stack单调栈，数组里要有三个数小大中；stack存大到小的单调�
 就写两个method，reverse和isPrime，prime加到开根号就行；偶数长度的回文会被11整除
 373	Find K Pairs with Smallest Sums	35.3%	Medium	
 重写pq comparator，按两个数的sum小到大排序，遍历两组数组的所有组合，放进pq中，res从pq拿结果出来
+846. Hand of Straights	Medium
+一串连续的数和W取余也一定是连续的；构建长度W的数组，看作W堆的牌，把每张牌往牌堆上放；然后看每堆牌的高度是不是 length / W
 Amazon BQ
 Practice using the STAR Method on these common behavioral interviewing questions: 
 • Describe a situation in which you were able to use persuasion to successfully convince someone to see things your way.
