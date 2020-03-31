@@ -768,8 +768,8 @@ Combinations	49.2%	Medium
 从中心展开的暴力解；遍历string，以当前char和+1为中心向左右展开判断左右是否相同；O(n^2)反正和DP的时间复杂度一样写个简单的
 771	Jewels and Stones	83.5%	Easy	
 hashtable，把J里的char存到map里，再遍历S，如果有就+1
-160	
-Intersection of Two Linked Lists	35.1%	Easy	
+160	Intersection of Two Linked Lists	35.1%	Easy
+不用知道链表的长度，当作环来做，如果一个走到null，跳到另一个的头。终止只会有两种情况，两个都走到null或者走到重合结点
 707	
 Design Linked List	21.1%	Easy	
 285	
