@@ -960,6 +960,8 @@ stack单调栈，数组里要有三个数小大中；stack存大到小的单调�
 重写pq comparator，按两个数的sum小到大排序，遍历两组数组的所有组合，放进pq中，res从pq拿结果出来
 846. Hand of Straights	Medium
 一串连续的数和W取余也一定是连续的；构建长度W的数组，看作W堆的牌，把每张牌往牌堆上放；然后看每堆牌的高度是不是 length / W
+792. Number of Matching Subsequences	Medium
+hashtable;题目的S太长，用的方法要只遍历一次S。用数据结构存words。方法是按首字母存word进hashtable，每一项是queue。然后for循环遍历S，找到当前字母的那个queue，遍历这个queue取word，如果这个word长度只有1，就是已经走完了，res++；else把这个word去掉头再放回大数组里；把S走完，数组里剩的都不用管，返回res
 Amazon BQ
 Practice using the STAR Method on these common behavioral interviewing questions: 
 • Describe a situation in which you were able to use persuasion to successfully convince someone to see things your way.
