@@ -962,6 +962,8 @@ stack单调栈，数组里要有三个数小大中；stack存大到小的单调�
 一串连续的数和W取余也一定是连续的；构建长度W的数组，看作W堆的牌，把每张牌往牌堆上放；然后看每堆牌的高度是不是 length / W
 792. Number of Matching Subsequences	Medium
 hashtable;题目的S太长，用的方法要只遍历一次S。用数据结构存words。方法是按首字母存word进hashtable，每一项是queue。然后for循环遍历S，找到当前字母的那个queue，遍历这个queue取word，如果这个word长度只有1，就是已经走完了，res++；else把这个word去掉头再放回大数组里；把S走完，数组里剩的都不用管，返回res
+678. Valid Parenthesis String	Medium
+贪心思想；星号同时记录作为左括号和右括号，用low和high记录左括号最大最小两个边界，high是星号全部作为左，low是星号全部作为右；遇到左，highlow都++；遇到右，high--，如果low大于0也--；遇到星号，high++，如果low大于0，low--；只要high不够直接返回false；遍历结束返回low是否是0
 Amazon BQ
 Practice using the STAR Method on these common behavioral interviewing questions: 
 • Describe a situation in which you were able to use persuasion to successfully convince someone to see things your way.
