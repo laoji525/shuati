@@ -858,8 +858,8 @@ Palindrome Partitioning	42.2%	Medium
 递归，传入开始点和结束点，用while，fast，slow找中间node，中间node作为root，call递归方程，左节点传第一个点和中间node，右节点传中间下一个和最后节点
 509	
 Fibonacci Number	66.7%	Easy	
-129	
-Sum Root to Leaf Numbers	43.4%	Medium	
+129	Sum Root to Leaf Numbers	43.4%	Medium	
+DFS遍历，root到叶的path组数字，数字是sum*10加当前val，到达叶返回sum；return继续左右遍历
 437	
 Path Sum III	43.5%	Easy	
 44	
