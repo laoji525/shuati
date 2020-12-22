@@ -966,6 +966,10 @@ hashtable;题目的S太长，用的方法要只遍历一次S。用数据结构�
 贪心思想；星号同时记录作为左括号和右括号，用low和high记录左括号最大最小两个边界，high是星号全部作为左，low是星号全部作为右；遇到左，highlow都++；遇到右，high--，如果low大于0也--；遇到星号，high++，如果low大于0，low--；只要high不够直接返回false；遍历结束返回low是否是0
 1143. Longest Common Subsequence	Medium
 二维DP；0的位置多一圈，dp[0][0]给0；二维遍历char一样就+1，否则左或者上取max，返回dp最后一个
+910. Smallest Range I	Easy
+举例子，画xy坐标，答案是最大值-k和最小值+k的距离，
+910. Smallest Range II	Medium
+数组先排序，画xy坐标图，左边全加K，右边全减K，初始res是最大值减最小值；0到n-1遍历，update最大值最小值和res
 Amazon BQ
 Practice using the STAR Method on these common behavioral interviewing questions: 
 • Describe a situation in which you were able to use persuasion to successfully convince someone to see things your way.
