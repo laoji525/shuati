@@ -671,8 +671,8 @@ Valid Triangle Number	45.9%	Medium
 Unique Binary Search Trees II	36.6%	Medium	
 203	Remove Linked List Elements	36.3%	Easy	
 建一个val是0的dummy，next指向head，while（head。Next ！= null）下一个点为val，连接下下个点，否则head到下一个点，结果返回dummy。Next
-24	
-Swap Nodes in Pairs	45.9%	Medium	
+24	Swap Nodes in Pairs	45.9%	Medium	
+prev,first,second三个节点，while循环遍历到底，交换first和second,然后推进head
 1094	
 Car Pooling	57.7%	Medium	
 50	Pow(x, n)	28.4%	Medium	
