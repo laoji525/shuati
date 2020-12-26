@@ -239,8 +239,8 @@ Insert into a Cyclic Sorted List
 29.8%	Medium	
 388	
 Longest Absolute File Path	39.5%	Medium	
-498	
-Diagonal Traverse	45.7%	Medium	
+498	Diagonal Traverse	45.7%	Medium	
+同一条线r+c是一样的，偶数向下，奇数向上，只有走到四条边框的时候是特殊情况，一个for循环走完
 703	Kth Largest Element in a Stream	46.9%	Easy	
 Pq, capacity为k，第k个大的就是第一个
 346	Moving Average from Data Stream 67.1%	Easy	
