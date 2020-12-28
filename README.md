@@ -972,6 +972,8 @@ hashtable;题目的S太长，用的方法要只遍历一次S。用数据结构�
 数组先排序，画xy坐标图，左边全加K，右边全减K，初始res是最大值减最小值；0到n-1遍历，update最大值最小值和res
 1602. Find Nearest Right Node in Binary Tree	Medium
 BFS同层遍历，找到u，ruturn下一个node或者null
+1345. Jump Game IV	Hard
+用map构建图，key是数组，value是能去的index；然后就是BFS遍历图找最短路径
 Amazon BQ
 Practice using the STAR Method on these common behavioral interviewing questions: 
 • Describe a situation in which you were able to use persuasion to successfully convince someone to see things your way.
