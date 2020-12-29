@@ -974,6 +974,8 @@ hashtable;题目的S太长，用的方法要只遍历一次S。用数据结构�
 BFS同层遍历，找到u，ruturn下一个node或者null
 1345. Jump Game IV	Hard
 用map构建图，key是数，value是能去的index；然后就是BFS遍历图找最短路径
+754. Reach a Number	Medium
+数学问题,模拟;正负不影响step,sum和target的差可以通过-step去掉,但是需要差是偶数,step加到差是偶数就能return
 Amazon BQ
 Practice using the STAR Method on these common behavioral interviewing questions: 
 • Describe a situation in which you were able to use persuasion to successfully convince someone to see things your way.
