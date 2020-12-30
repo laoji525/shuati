@@ -100,9 +100,8 @@ Insert Delete GetRandom O(1)	43.5%	Medium
 用一个hashmap存，key是排序后的string，value是list，里面是每个anagram的string，最后声明一个arraylist用hashmap的value，返回这个list
 212	
 Word Search II	29.6%	Hard	
-340	
-Longest Substring with At Most K Distinct Characters
-40.6%	Hard	
+340	Longest Substring with At Most K Distinct Characters	40.6%	Hard	
+双指针，hashmap映射字母出现的次数；num记录现有的字母，当num大于k了，左边界往右缩，同时开始删映射的值，右边界每步用max比较res最大值
 3	Longest Substring Without Repeating Characters	28.7%	Medium	
 Sliding window, hashmap存char最后出现的位置，声明start位置和longest长度，遍历string，如果当前char出现过并且比start大，start=当前+1，每次计算longest长度，把当前c放进map里，最后返回longest
 314	Binary Tree Vertical Order Traversal 41.6%	Medium	
