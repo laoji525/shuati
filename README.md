@@ -975,6 +975,8 @@ BFS同层遍历，找到u，ruturn下一个node或者null
 用map构建图，key是数，value是能去的index；然后就是BFS遍历图找最短路径
 754. Reach a Number	Medium
 数学问题,模拟;正负不影响step,sum和target的差可以通过-step去掉,但是需要差是偶数,step加到差是偶数就能return
+1457. Pseudo-Palindromic Paths in a Binary Tree		
+DFS，和判断回文；用set存int，走到最后leave，看set的size是否小于2来return0或者1；preorder递归
 Amazon BQ
 Practice using the STAR Method on these common behavioral interviewing questions: 
 • Describe a situation in which you were able to use persuasion to successfully convince someone to see things your way.
