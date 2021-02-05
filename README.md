@@ -985,7 +985,8 @@ DFS，和判断回文；用set存int，走到最后leave，看set的size是否�
 贪心思想；先排序，让最重的先走，从最轻的开始往后，如果能一起上就上，否则轻的不懂，return重的pointer走了几步
 669. Trim a Binary Search Tree		Medium
 修剪BST，递归遍历的同时进行操作；如果当前节点值小于low，右边进递归，大于high左边进递归；然后继续遍历，更新左右节点
-
+594. Longest Harmonious Subsequence	Medium
+只需要找子序列，就是找相邻两个数最多的；用hashmap记录频率；for循环遍历所有key，找key+1是否在hashmap，更新resmax
 Amazon BQ
 Practice using the STAR Method on these common behavioral interviewing questions: 
 • Describe a situation in which you were able to use persuasion to successfully convince someone to see things your way.
