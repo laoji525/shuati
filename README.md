@@ -392,8 +392,8 @@ Unique Paths III	71.2%	Hard
 Dp题，转移方程是前两个相加，空间复杂度是n，可以只用两个int记录，space就只用1
 224	
 Basic Calculator	33.6%	Hard	
-785	
-Is Graph Bipartite?	44.3%	Medium	
+785	Is Graph Bipartite?	44.3%	Medium	
+二分图，用染色法，相邻两个节点用1和-1染色，遍历图，如果当前点和下一个点颜色相同就返回False；DFS和BFS都可以；用一个int数组存颜色；图全部遍历完，返回true
 99	
 Recover Binary Search Tree	35.4%	Hard	
 59	
