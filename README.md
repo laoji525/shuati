@@ -989,6 +989,8 @@ DFS，和判断回文；用set存int，走到最后leave，看set的size是否�
 只需要找子序列，就是找相邻两个数最多的；用hashmap记录频率；for循环遍历所有key，找key+1是否在hashmap，更新resmax
 784. Letter Case Permutation		Medium
 回溯DFS递归；数字就跳过，如果是字母大写小写分别进递归，index走完，字符串放进res
+413. Arithmetic Slices		Medium
+找数组里一共有多少个等差数列，一个切片至少三个以上；用DP数组，dp[i]表示当前数做结束总共有多少个等差数列；从2开始遍历判断当前数和他的前三个是不是等差数列，是的话前一个dp+1，每次res+当前dp
 Amazon BQ
 Practice using the STAR Method on these common behavioral interviewing questions: 
 • Describe a situation in which you were able to use persuasion to successfully convince someone to see things your way.
