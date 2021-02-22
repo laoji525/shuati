@@ -991,6 +991,8 @@ DFS，和判断回文；用set存int，走到最后leave，看set的size是否�
 回溯DFS递归；数字就跳过，如果是字母大写小写分别进递归，index走完，字符串放进res
 413. Arithmetic Slices		Medium
 找数组里一共有多少个等差数列，一个切片至少三个以上；用DP数组，dp[i]表示当前数做结束总共有多少个等差数列；从2开始遍历判断当前数和他的前三个是不是等差数列，是的话前一个dp+1，每次res+当前dp
+991. Broken Calculator		Medium
+先分两种情况，X大于等于Y，可以直接返回X-Y步；再看X小于Y的时候，对X操作可以转换成对Y操作；Y有奇偶两种，奇数肯定是+1，当Y是偶数时需要证明；假设Y+1，Y变成奇数，下一步又是+1，再除以二，公式是（Y+1+1)/2,相当于Y/2 + 1,结果一样第一种3步，第二种2步，所以证明Y是偶数时，永远用/2
 Amazon BQ
 Practice using the STAR Method on these common behavioral interviewing questions: 
 • Describe a situation in which you were able to use persuasion to successfully convince someone to see things your way.
