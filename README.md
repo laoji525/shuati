@@ -552,8 +552,8 @@ The Skyline Problem	32.2%	Hard
 Longest Turbulent Subarray	45.7%	Medium	
 407	
 Trapping Rain Water II	39.7%	Hard	
-143	
-Reorder List	31.9%	Medium	
+143	Reorder List	31.9%	Medium	
+分三步，先快慢指针平分，右半边反转，最后交替链接左右两个list
 9	Palindrome Number	44.5%	Easy	
 负数或者非0的0结尾的都返回false，把x翻过来，返回两个数==
 1051	
