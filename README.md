@@ -634,9 +634,8 @@ Shortest Distance from All Buildings
 遍历数组找最大的3和和最小的两个，（两个负数），返回比较这两情况里的最大值
 85	Maximal Rectangle	34.2%	Hard	
 DP;用3个数组分别记录高度,左边界,右边界;高度不用说是1就++,0就归零;左右边界要画图用具体的位置来推;0就边界推进一位;1从当前行的边界和上一行的位置里取大小值;三个数组值算完就能算当前点的最大面积,注意右减左要再加1;return最大面积
-325	
-Maximum Size Subarray Sum Equals k
-45.1%	Medium	
+325	Maximum Size Subarray Sum Equals k	45.1%	Medium	
+求sumk连续子数组长度；遍历数组，记录sum，用hashmap存sum和下标；计算sum和k差值；如果sum就是k，长度更新为i+1；如果diff出现过，说明可以把前一段切掉，也满足sumK，更新长度；同时map存入sum和下标，后面再次出现的不重要，不会影响结果所以跳过
 609	
 Find Duplicate File in System	56.1%	Medium	
 104	Maximum Depth of Binary Tree	61.7%	Easy	
